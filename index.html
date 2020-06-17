@@ -8,13 +8,18 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <style>
         body
         {
-          background: #0C122C;
-          background-image: linear-gradient(to bottom ,#0C122C,#0E193A,#131F49);
+          background: #0F1B3D;
+
+          background-image:  url("images/bg-desktop.svg") ;
+
           background-repeat: no-repeat;
-          background-size: cover;
+          background-position: bottom;
+
+        /*  background-size: cover;*/
           color: white;
 
           font-family: 'Raleway', sans-serif;
@@ -23,39 +28,155 @@
         .flexbox-container {
 
           display: flex;
+
           width: 80%;
           height: 655px;
           margin: auto;
-          padding-top: 230px;
+          padding-top: 250px;
           justify-content: center;
         }
         .flexbox-item {
-          width: 300px;
-          height: 170px;
+          width: 250px;
+          height: 150px;
           background-color: #1E2C69;
           box-sizing: border-box;
           border-radius: 5%;
           border-top-right-radius: 45%;
           padding: 25px;
+          margin-top: 9px;
+          box-shadow:5px 8px 5px #0F1B3D;
         }
         #indicator {
           width: 550px;
           height: 130px;
           background-color: #1E2C69;
           margin-left: 20px ;
-          margin-top: 35px;
+          margin-top: 30px;
             border-radius: 3%;
+            box-shadow:5px 8px 5px #0F1B3D;
         }
+        img {
+          margin: 4px;
+        }
+        .icons {
+          margin-top: -7px;
+          background-color: #0F1B3D;
+          margin-left:  5px;
+          padding: 6px;
+          border-radius: 5px;
+        }
+        .indicator-item {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: left;
+          width: 75%;
+          margin: auto;
+          padding-top: 30px;
+        }
+        #indicator-text{
+          margin-top: -10px;
+        }
+        #progress{
+          height: 12px;
+          width: 95%;
+          background: #0F1B3D;
+          border-radius: 5px;
+
+        }
+        #progress-box{
+          height: 100%;
+          width: 75%;
+          border-radius: 5px;
+        background-image: linear-gradient(to right, #ffa399, #ff4d97);
+        background-size: contain;
+
+      }
+      #pointer{
+        border-radius: 100%;
+        width: 12px;
+        height: 11px;
+        background-color: #dddbff;
+        margin-left: : 1px;
+        float: right;
+      }
+      #min {
+        float: left;
+      }
+      #max {
+        float: right;
+      }
+      .popup{
+        display:flex;
+
+        justify-content:center;
+        background-color:  white;
+        width: 25%;
+        height: 70px;
+        float:right;
+        margin-left: 30px;
+        margin-top: -60px;
+        margin-right: 15px;
+        border-radius: 10px;
+        position: relative;
+      }
+      #left{
+        padding: 20px 5px 0px 10px;
+        font-weight: bold;
+        font-size: 140%;
+        color: black;
+
+      }
+      #gb-left {
+        font-size: 70%;
+        color: grey;
+        padding-top: 30px;
+      }
+      .triangle {
+        content: '';
+  	position: absolute;
+  	bottom: 0;
+  	left: 65%;
+  	width: 0;
+  	height: 0;
+  	border: 30px solid transparent;
+  	border-top-color:white;
+  	border-bottom: 0;
+  	border-left: 0;
+  	margin-left: -10px;
+  	margin-bottom: -20px;
+      }
     </style>
     <title>Hello, world!</title>
   </head>
   <body>
     <div class="flexbox-container">
       <div class="flexbox-item">
-        <h3><img src="https://img.icons8.com/wired/25/000000/stack.png"/> Fylo</h3>
-
+        <h3><img src="images/logo.svg"></h3>
+        <br>
+        <p><img class="icons" src="images/icon-document.svg"> <img class="icons" src="images/icon-folder.svg"> <img class="icons" src="images/icon-upload.svg"></p>
       </div>
       <div id="indicator">
+        <div class="popup">
+          <div id="left">185</div>
+          <div id="gb-left">GB LEFT</div>
+          <div class="triangle" > </div>
+        </div>
+        <div class="indicator-item">
+          <p id="indicator-text">  You've used   <b>815 GB</b>    of your storage </p>
+
+
+
+          <div id="progress">
+
+          <div id="progress-box">
+            <div id="pointer">
+
+            </div>
+          </div>
+          <div id="min">0Gb</div>
+          <div id="max">1000Gb</div>
+        </div>
+        </div>
 
       </div>
     </div>
