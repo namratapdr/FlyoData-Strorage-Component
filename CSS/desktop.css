@@ -1,0 +1,137 @@
+@media (min-width: 768px) and (max-width: 1199.98px) {
+    body
+    {
+      background: #0F1B3D;
+
+      background-image:  url("images/bg-desktop.svg") ;
+
+      background-repeat: no-repeat;
+      background-position: bottom;
+
+    /*  background-size: cover;*/
+      color: white;
+
+      font-family: 'Raleway', sans-serif;
+      font-size: 14px;
+    }
+    .flexbox-container {
+
+      display: flex;
+
+      width: 80%;
+      height: 655px;
+      margin: auto;
+      padding-top: 250px;
+      justify-content: center;
+    }
+    .flexbox-item {
+      width: 250px;
+      height: 150px;
+      background-color: #1E2C69;
+      box-sizing: border-box;
+      border-radius: 5%;
+      border-top-right-radius: 45%;
+      padding: 25px;
+      margin-top: 9px;
+      box-shadow:5px 8px 5px #0F1B3D;
+    }
+    #indicator {
+      width: 550px;
+      height: 130px;
+      background-color: #1E2C69;
+      margin-left: 20px ;
+      margin-top: 30px;
+        border-radius: 3%;
+        box-shadow:5px 8px 5px #0F1B3D;
+    }
+    img {
+      margin: 4px;
+    }
+    .icons {
+      margin-top: -7px;
+      background-color: #0F1B3D;
+      margin-left:  5px;
+      padding: 6px;
+      border-radius: 5px;
+    }
+    .indicator-item {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: left;
+      width: 75%;
+      margin: auto;
+      padding-top: 30px;
+    }
+    #indicator-text{
+      margin-top: -10px;
+    }
+    #progress{
+      height: 12px;
+      width: 95%;
+      background: #0F1B3D;
+      border-radius: 5px;
+
+    }
+    #progress-box{
+      height: 100%;
+      width: 75%;
+      border-radius: 5px;
+    background-image: linear-gradient(to right, #ffa399, #ff4d97);
+    background-size: contain;
+
+  }
+  #pointer{
+    border-radius: 100%;
+    width: 12px;
+    height: 11px;
+    background-color: #dddbff;
+    margin-left: : 1px;
+    float: right;
+  }
+  #min {
+    float: left;
+  }
+  #max {
+    float: right;
+  }
+  .popup{
+    display:flex;
+
+    justify-content:center;
+    background-color:  white;
+    width: 25%;
+    height: 70px;
+    float:right;
+    margin-left: 30px;
+    margin-top: -60px;
+    margin-right: 15px;
+    border-radius: 10px;
+    position: relative;
+  }
+  #left{
+    padding: 20px 5px 0px 10px;
+    font-weight: bold;
+    font-size: 180%;
+    color: black;
+
+  }
+  #gb-left {
+    font-size: 70%;
+    color: grey;
+    padding-top: 30px;
+  }
+  .triangle {
+    content: '';
+position: absolute;
+bottom: 0;
+left: 65%;
+width: 0;
+height: 0;
+border: 30px solid transparent;
+border-top-color:white;
+border-bottom: 0;
+border-left: 0;
+margin-left: -10px;
+margin-bottom: -20px;
+  }
+}

@@ -1,0 +1,127 @@
+@media (min-width: 100px) and (max-width: 767.98px) {
+  body
+  {
+    background: #0F1B3D;
+
+    background-image:  url("images/bg-mobile.svg") ;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+
+  /*  background-size: cover;*/
+    color: white;
+
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+  }
+  .flexbox-container {
+
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    height: 655px;
+    margin: auto;
+    padding-top: 250px;
+    justify-content: center;
+  }
+  .flexbox-item {
+    width: 300px;
+    height: 150px;
+    background-color: #1E2C69;
+    box-sizing: border-box;
+    border-radius: 5%;
+    border-top-right-radius: 45%;
+    padding: 25px;
+    margin-top: -50px;
+    box-shadow:5px 8px 5px #0F1B3D;
+  }
+  #indicator {
+    width: 550px;
+    height: 130px;
+    background-color: #1E2C69;
+    margin-top: -125px;
+      border-radius:4%;
+      box-shadow:5px 8px 5px #0F1B3D;
+  }
+  img {
+    margin: 8px;
+  }
+  .icons {
+    margin-top: -10px;
+    background-color: #0F1B3D;
+    margin-left:  15px;
+    padding: 6px;
+    border-radius: 5px;
+  }
+  .indicator-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    width: 75%;
+    margin: auto;
+    padding-top: 30px;
+    position: relative;
+  }
+  #indicator-text{
+    margin-top: -5px;
+  }
+  #progress{
+    height: 12px;
+    width: 95%;
+    background: #0F1B3D;
+    border-radius: 5px;
+
+  }
+  #progress-box{
+    height: 100%;
+    width: 75%;
+    border-radius: 5px;
+  background-image: linear-gradient(to right, #ffa399, #ff4d97);
+  background-size: contain;
+
+}
+#pointer{
+  border-radius: 100%;
+  width: 12px;
+  height: 11px;
+  background-color: #dddbff;
+  margin-left: : 1px;
+  float: right;
+}
+#min {
+  float: left;
+}
+#max {
+  float: right;
+}
+.popup{
+  display:flex;
+
+  justify-content:center;
+  background-color:  white;
+  width: 28%;
+  height: 70px;
+
+  margin-left:160px;
+  margin-right: 10px;
+  border-radius: 10px;
+  position: absolute;
+  top:475px;
+  left:10px;
+}
+#left{
+  padding: 15px 5px 0px 10px;
+  font-weight: bold;
+  font-size: 200%;
+  color: black;
+
+}
+#gb-left {
+  font-size: 80%;
+  color: grey;
+  padding-top: 30px;
+}
+.triangle {
+  display: none;
+}
+}
