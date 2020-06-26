@@ -1,7 +1,8 @@
 @media (min-width: 768px) and (max-width: 1199.98px) {
     body
     {
-      background: #0F1B3D;
+        height: 100%;
+      background:  #0F1B3D;
 
       background-image:  url("images/bg-desktop.svg") ;
 

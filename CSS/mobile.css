@@ -1,6 +1,7 @@
 @media (min-width: 100px) and (max-width: 767.98px) {
   body
   {
+      height: 100%;
     background: #0F1B3D;
 
     background-image:  url("images/bg-mobile.svg") ;

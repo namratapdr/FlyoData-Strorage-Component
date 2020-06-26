@@ -1,13 +1,13 @@
 @media (min-width: 1200px)  {
     body
     {
-      background: #0F1B3D;
+      height: 100%;
+      background:  #0F1B3D;
 
       background-image:  url("images/bg-desktop.svg") ;
 
       background-repeat: no-repeat;
       background-position: bottom;
-
     /*  background-size: cover;*/
       color: white;
 
